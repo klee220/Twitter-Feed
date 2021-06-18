@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="author" content="Preston Reed">
+  <meta name="author" content="Karina Lee">
+  <head>
+    <title>Twitter Home Page</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="font-family:Helvetica Neue; background-color:#e6ecf0;">
+    <!-- TODO: Create HTML elements for Twitter mockup inside body -->
+    <div role="navigation">
+      <!--header -->
+      <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <h1> 
+            <img style="max-width: 25px; max-height: 25px;" src="./images/twitter-logo.png" alt="twitter logo, minimalistic blue bird"> 
+          </h1>    
+        </a>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Moments</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Notifications</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Messages</a>
+            </li>
+            <li class="nav-item">
+                <a href="main" class="skip-link">skip link</a>
+            </li>
+            <li class="nav-item">
+              <input type="checkbox" id="pauseBox">
+              <label for="pauseBox" style="margin-top: 8px;">Pause Feed</label> 
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <input id="searchBar" type="search" placeholder="Search in tweets" onsearch="handleSearch(event)">
+            </li>
+            <li class="nav-item">
+              <a href="#" class="button">Tweet</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="wrapper">
+      <div id="left">
+        <div class="cover"> 
+          <img src="./images/ratatouille-banner.png" alt="Black cover with the word Ratatouille"> 
+        </div>
+        <div class="blank"> </div> 
+        <div id="profile"> 
+          <div id="picture">
+            <img style="border:2px solid rgb(255, 255, 255);" src="./images/ratatouille.jpg" alt="Remy the rat wearing a chef's hat and holding a spoon while leaning on two pepper shakers" >   
+          </div>
+          <div id="text">
+            <p> 
+              <br> <a href="#" class="user"> Remy </a>
+              <br> <span class="tag"> @remy </span>
+            </p>          
+          </div>
+        </div>
+        <div class="stats flex"> 
+          <div class="child">
+            <p> 
+              <b class="category"> Tweets </b>
+              <br> <br> <b class="count"> 5049 </b>
+            </p>
+          </div>
+          <div class="child">
+            <p> 
+              <b class="category"> Following </b>
+              <br> <br> <b class="count"> 324 </b>
+            </p>
+          </div>
+          <div class="child">
+            <p> 
+              <b class="category"> Followers </b>
+              <br> <br> <b class="count"> 809 </b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div role="main" id ="tweet-container"> 
+      </div>
+      <div class="left">
+        <div class="title">
+            Who To Follow
+        </div>
+        <div class="item">
+          <p> 
+            <b class="text"> Linguini </b>
+            <span class="tag"> @linguini</span>
+            <img src="./images/linguini.png" alt="Linguini the boy chef with red hair wearing a chef's hat and smiling" >   
+            <a class="button followButton" href="#" style="font-family: Arial, Helvetica, sans-serif">Follow</a>
+          </p>
+        </div>
+        <div class="item">
+          <p> 
+            <b class="text"> CS110 TA </b>
+            <span class="tag"> @cs</span>
+            <img src="./images/ratatouille.jpg" alt="Remy the rat wearing a chef's hat and holding a spoon leaning on two pepper shakers" >   
+            <br> <a class="button followButton" href="#" style="font-family: Arial, Helvetica, sans-serif">Follow</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
